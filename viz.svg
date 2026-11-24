@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="517" viewBox="0 0 760 517" role="img" aria-label="Step-by-step visual walkthrough">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="context-stroke"/></marker></defs>
+<rect x="1.0" y="1.0" width="758.0" height="515.0" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" fill="#1e293b" text-anchor="start" font-weight="600">Cycle Start — meet inside, then restart from the head</text>
+<circle cx="35.0" cy="74.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="78.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">1</text>
+<text x="56.0" y="79.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">The list loops back to node 2. Find exactly WHERE the cycle begins, still in O(1)</text>
+<text x="56.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">space.</text>
+<rect x="24.0" y="128.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="51.0" y="151.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">1</text>
+<line x1="78.0" y1="146.0" x2="102.0" y2="146.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="108.0" y="128.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="135.0" y="151.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">2</text>
+<line x1="162.0" y1="146.0" x2="186.0" y2="146.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="192.0" y="128.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="219.0" y="151.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">3</text>
+<line x1="246.0" y1="146.0" x2="270.0" y2="146.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="276.0" y="128.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="303.0" y="151.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">4</text>
+<path d="M 303 126 Q 219 94 135 126" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="219.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#dc2626" text-anchor="middle">back to 2</text>
+<line x1="24.0" y1="178.0" x2="736.0" y2="178.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="198.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="202.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">2</text>
+<text x="56.0" y="203.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Phase 1: slow/fast meet somewhere inside the loop. The 2:1 speed ratio forces a tidy</text>
+<text x="56.0" y="222.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">equation: head-to-entry distance ≡ meeting-point-to-entry distance (mod cycle</text>
+<text x="56.0" y="241.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">length).</text>
+<rect x="24.0" y="271.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="51.0" y="294.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">1</text>
+<line x1="78.0" y1="289.0" x2="102.0" y2="289.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="108.0" y="271.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="135.0" y="294.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">2</text>
+<line x1="162.0" y1="289.0" x2="186.0" y2="289.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="192.0" y="271.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="219.0" y="294.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">3</text>
+<line x1="246.0" y1="289.0" x2="270.0" y2="289.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="276.0" y="271.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="303.0" y="294.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">4</text>
+<path d="M 303 269 Q 219 237 135 269" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr)"/>
+<line x1="303.0" y1="333.0" x2="303.0" y2="313.0" stroke="#2563eb" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="303.0" y="347.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#2563eb" text-anchor="middle" font-weight="600">meet</text>
+<line x1="24.0" y1="363.0" x2="736.0" y2="363.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="383.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="387.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">3</text>
+<text x="56.0" y="388.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Phase 2: restart one pointer at the head; walk BOTH one step at a time. The equation</text>
+<text x="56.0" y="407.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">makes them collide precisely at the entry — node 2.</text>
+<rect x="24.0" y="437.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="51.0" y="460.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">1</text>
+<line x1="78.0" y1="455.0" x2="102.0" y2="455.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="108.0" y="437.0" width="54.0" height="36.0" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="135.0" y="460.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">2</text>
+<line x1="162.0" y1="455.0" x2="186.0" y2="455.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="192.0" y="437.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="219.0" y="460.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">3</text>
+<line x1="246.0" y1="455.0" x2="270.0" y2="455.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="276.0" y="437.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="303.0" y="460.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">4</text>
+<path d="M 303 435 Q 219 403 135 435" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="380.0" y="499.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">github.com/Sreenivas-Sadhu-Prabhakara · dsa series</text>
+</svg>
